@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td,
+        th {
+            border: 2px solid black;
+            text-align: left;
+            padding: 18px;
+            width: 40%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        li {
+            padding: 0.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTTP1.1 VS HTTP2</h1>
+    <table style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">HTTP1.1</th>
+            <th style="text-align: center;">HTTP2</th>
+        </tr>
+        <tr>
+            <td>The usest works on the textual format.</td>
+            <td>It works on the binary protocol.</td>
+        </tr>
+        <tr>
+            <td>There is head of line blocking that blocks all the requests behind it until it doesn’t get its all
+                resources.</td>
+            <td>It allows multiplexing so one TCP connection is required for multiple requests.</td>
+        </tr>
+        <tr>
+            <td>It uses requests resource Inlining for use getting multiple pages.</td>
+            <td>It uses PUSH frame by server that collects all multiple pages .</td>
+        </tr>
+        <tr>
+            <td>It compresses data by itself.</td>
+            <td>It uses HPACK for data compression.</td>
+        </tr>
+        <tr>
+            <td>It can load one requests at a time. Hence one request per one TCP connection is possible.</td>
+            <td>It uses single TCP connection to deliver multiple requests/responses (in parallel)</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Javascript object and its Representations</h1>
+    <!-- <h2 style="text-align: left;">JavaScript Objects</h2> -->
+    <h3 style="text-align: center;">In JavaScript, objects are king. If you understand objects, you understand JavaScript.</h3><br>
+
+    <p>Objects are Variables:</p>
+    <ol>
+        <li>JavaScript variables can also contain many values.</li>
+        <li>Objects are variables too. But objects can contain many values.</li>
+        <li>Object values are written as name : value pairs (name and value separated by a colon).</li>
+        <li>A JavaScript object is a collection of named values</li>
+    </ol>
+    <br>
+    <p>Objects written as name value pairs are similar to:</p>
+    <ol>
+        <li>Associative arrays in PHP</li>
+        <li>Dictionaries in Python</li>
+    </ol><br>
+    <p>Object Methods:</p>
+    <ol>
+        <li>Methods are actions that can be performed on objects.</li>
+        <li>Object properties can be both primitive values, other objects, and functions.</li>
+        <li>An object method is an object property containing a function definition.</li>
+        <li>JavaScript objects are containers for named values, called properties and methods.</li>
+    </ol>
+    <br>
+    <p>Creating a JavaScript Object:</p>
+    <ol>
+        <li>With JavaScript, you can define and create your own objects.</li>
+    </ol>
+    <br>
+    <p>There are different ways to create new objects:</p>
+    <ol>
+        <li>Create a single object, using an object literal.</li>
+        <li>Create a single object, with the keyword new</li>
+    </ol>
+
+</body>
+
+</html>
